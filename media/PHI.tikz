@@ -1,0 +1,11 @@
+\begin{axis}[
+  xlabel={\(n\)},
+  ylabel={\(\varphi(n)\)},
+  axis lines=middle,
+  xmin=0, xmax=100,
+  ymin=0, ymax=100,
+  xmajorgrids=true,
+  ymajorgrids=true,
+  grid style=dashed]
+\addplot[only marks,mark=x,color=blue,thick] table[col sep=comma,header=false,x index=0,y index=1] {media/PHI.csv};
+\end{axis}
